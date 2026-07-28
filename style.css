@@ -299,24 +299,36 @@ video{
 }
 
 /* ==========================
-   VIDEOCLIPS
+   VIDEOCLIP
 ========================== */
 
-.project[data-content="videoclips"] .project-header{
+.project[data-content="videoclip"]{
 
-    margin-left: 2rem;
-    margin-bottom: 5rem;
-
-}
-
-.project[data-content="videoclips"] .video-frame{
-
-    width: 78%;
-    margin: 0 0 6rem 7rem;
+    max-width: none;
 
 }
 
-.project[data-content="videoclips"] .video-frame iframe{
+.project[data-content="videoclip"] .project-header{
+
+    display: none;
+
+}
+
+.project[data-content="videoclip"] .project-block{
+
+    max-width: none;
+
+}
+
+.project[data-content="videoclip"] .video-frame{
+
+    width: min(62vw, 900px);
+
+    margin: 2rem 0 5rem 10rem;
+
+}
+
+.project[data-content="videoclip"] .video-frame iframe{
 
     display: block;
 
@@ -327,41 +339,38 @@ video{
 
 }
 
-.project[data-content="videoclips"] .credits{
+.project[data-content="videoclip"] .credits{
 
-    width: 18rem;
+    width: 20rem;
 
-    margin-left: -2rem;
-
-}
-
-.project[data-content="videoclips"] .credits h2{
-
-    font-size: 1rem;
-    font-weight: 450;
-    line-height: 1.45;
-
-    margin-bottom: 1.5rem;
+    margin-left: -1rem;
 
 }
 
-.project[data-content="videoclips"] .credits p{
+.project[data-content="videoclip"] .credits h2{
 
-    line-height: 1.9;
+    font-size: 1.05rem;
+    font-weight: 400;
+    line-height: 1.5;
+
+    margin-bottom: 2rem;
+
+}
+
+.project[data-content="videoclip"] .credits em{
+
+    font-style: italic;
+    font-weight: 400;
+
+}
+
+.project[data-content="videoclip"] .credits p{
+
+    font-size: .95rem;
+    line-height: 1.8;
+
     text-transform: lowercase;
 
-}
-
-.project[data-content="videoclips"] .ascii-header{
-
-    font-family: monospace;
-    font-size: .82rem;
-    line-height: 1.05;
-
-    white-space: pre;
-
-    margin: 0 0 5rem 4rem;
-
-    overflow-x: auto;
+    color: var(--muted);
 
 }
