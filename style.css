@@ -391,3 +391,7 @@ video{
     color:rgb(0, 0, 0);
 
 }
+
+body{
+    outline:10px solid red !important;
+}
