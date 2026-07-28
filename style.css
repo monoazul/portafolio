@@ -98,8 +98,6 @@ body{
     font-size:.95rem;
     font-weight:400;
 
-    text-transform:lowercase;
-
     margin-bottom:1rem;
 
 }
@@ -391,7 +389,5 @@ video{
     line-height:1.8;
 
     color:rgb(0, 0, 0);
-
-    text-transform:none;
 
 }
