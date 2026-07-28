@@ -302,75 +302,96 @@ video{
    VIDEOCLIP
 ========================== */
 
-.project[data-content="videoclip"]{
-
-    max-width: none;
-
-}
-
 .project[data-content="videoclip"] .project-header{
 
-    display: none;
+    display:none;
 
 }
 
 .project[data-content="videoclip"] .project-block{
 
-    max-width: none;
+    max-width:none;
 
 }
 
-.project[data-content="videoclip"] .video-frame{
+.project[data-content="videoclip"] .video-player{
 
-    width: min(62vw, 900px);
+    width:min(68vw,600px);
 
-    margin: 2rem 0 5rem 10rem;
+    margin:2rem 0 5rem 8rem;
 
 }
 
-.project[data-content="videoclip"] .video-frame iframe{
+.project[data-content="videoclip"] .video-cover{
 
-    display: block;
+    display:block;
 
-    width: 100%;
-    aspect-ratio: 16 / 9;
+    width:100%;
 
-    border: none;
+    padding:0;
+
+    border:none;
+
+    background:none;
+
+    cursor:pointer;
+
+}
+
+.project[data-content="videoclip"] .video-cover img{
+
+    display:block;
+
+    width:100%;
+
+}
+
+.project[data-content="videoclip"] iframe{
+
+    display:block;
+
+    width:100%;
+
+    aspect-ratio:16/9;
+
+    border:none;
 
 }
 
 .project[data-content="videoclip"] .credits{
 
-    width: 20rem;
+    width:50rem;
 
-    margin-left: -1rem;
+    margin-left:-1rem;
 
 }
 
 .project[data-content="videoclip"] .credits h2{
 
-    font-size: 1.05rem;
-    font-weight: 400;
-    line-height: 1.5;
+    font-size:1rem;
 
-    margin-bottom: 2rem;
+    font-weight:400;
+
+    line-height:1.5;
+
+    margin-bottom:1.5rem;
 
 }
 
 .project[data-content="videoclip"] .credits em{
 
-    font-style: italic;
-    font-weight: 400;
+    font-style:italic;
 
 }
 
 .project[data-content="videoclip"] .credits p{
 
-    font-size: .95rem;
-    line-height: 1.8;
+    font-size:.92rem;
 
-    text-transform: lowercase;
+    line-height:1.8;
 
-    color: var(--muted);
+    color:rgb(0, 0, 0);
+
+    text-transform:none;
 
 }

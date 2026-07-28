@@ -59,3 +59,24 @@ homeLink.addEventListener("click", event => {
     showHome();
 
 });
+
+/* videclip */
+
+const cover = document.getElementById("coiffeur-video");
+
+if (cover) {
+
+    cover.addEventListener("click", () => {
+
+        cover.outerHTML = `
+            <iframe
+                src="https://www.youtube.com/embed/uM_IBLBHyKA?autoplay=1&rel=0"
+                title="Coiffeur"
+                allow="autoplay; encrypted-media; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        `;
+
+    });
+
+}
