@@ -392,3 +392,84 @@ video{
     color:rgb(0, 0, 0);
 
 }
+
+/* ==========================
+   FOTO
+========================== */
+
+.photo-archive{
+
+    display:flex;
+    flex-direction:column;
+
+    gap:8rem;
+
+    width:min(900px,90vw);
+
+    margin:2rem auto 8rem;
+
+}
+
+.archive-year{
+
+    font-size:1rem;
+
+    letter-spacing:none;
+
+    color:black;
+
+}
+
+.archive-entry{
+
+    width:100%;
+
+}
+
+.archive-entry img{
+
+    display:block;
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+.archive-entry.large img{
+
+    width:100%;
+
+}
+
+.archive-entry.small img{
+
+    width:55%;
+
+}
+
+.archive-entry.text{
+
+    max-width:34rem;
+
+    line-height:1.8;
+
+}
+
+.align-left{
+
+    align-self:flex-start;
+
+}
+
+.align-center{
+
+    align-self:center;
+
+}
+
+.align-right{
+
+    align-self:flex-end;
+
+}
