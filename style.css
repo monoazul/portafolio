@@ -302,43 +302,66 @@ video{
    VIDEOCLIPS
 ========================== */
 
-.video-frame{
+.project[data-content="videoclips"] .project-header{
 
-    width:100%;
-
-    margin:2rem 0 5rem 6rem;
-
-}
-
-.video-frame iframe{
-
-    width:80%;
-
-    aspect-ratio:16 / 9;
-
-    border:none;
+    margin-left: 2rem;
+    margin-bottom: 5rem;
 
 }
 
-.credits{
+.project[data-content="videoclips"] .video-frame{
 
-    width:24rem;
-
-    margin-left:3rem;
-
-}
-
-.credits h2{
-
-    font-size:1rem;
-    font-weight:450;
-
-    margin-bottom:1rem;
+    width: 78%;
+    margin: 0 0 6rem 7rem;
 
 }
 
-.credits p{
+.project[data-content="videoclips"] .video-frame iframe{
 
-    line-height:1.8;
+    display: block;
+
+    width: 100%;
+    aspect-ratio: 16 / 9;
+
+    border: none;
+
+}
+
+.project[data-content="videoclips"] .credits{
+
+    width: 18rem;
+
+    margin-left: -2rem;
+
+}
+
+.project[data-content="videoclips"] .credits h2{
+
+    font-size: 1rem;
+    font-weight: 450;
+    line-height: 1.45;
+
+    margin-bottom: 1.5rem;
+
+}
+
+.project[data-content="videoclips"] .credits p{
+
+    line-height: 1.9;
+    text-transform: lowercase;
+
+}
+
+.project[data-content="videoclips"] .ascii-header{
+
+    font-family: monospace;
+    font-size: .82rem;
+    line-height: 1.05;
+
+    white-space: pre;
+
+    margin: 0 0 5rem 4rem;
+
+    overflow-x: auto;
 
 }
