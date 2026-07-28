@@ -80,3 +80,6 @@ if (cover) {
     });
 
 }
+
+const segundoVideo = document.getElementById("segundo-video");
+
