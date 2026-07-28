@@ -297,3 +297,48 @@ video{
     color:inherit;
 
 }
+
+/* ==========================
+   VIDEOCLIPS
+========================== */
+
+.video-frame{
+
+    width:72%;
+
+    margin:2rem 0 5rem 6rem;
+
+}
+
+.video-frame iframe{
+
+    width:100%;
+
+    aspect-ratio:16 / 9;
+
+    border:none;
+
+}
+
+.credits{
+
+    width:24rem;
+
+    margin-left:2rem;
+
+}
+
+.credits h2{
+
+    font-size:1rem;
+    font-weight:450;
+
+    margin-bottom:1rem;
+
+}
+
+.credits p{
+
+    line-height:1.8;
+
+}
