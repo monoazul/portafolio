@@ -559,3 +559,199 @@ video{
     height:auto;
 
 }
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media (max-width: 700px){
+
+    :root{
+
+        --space-m:1.5rem;
+        --space-l:3rem;
+
+    }
+
+    body{
+
+        display:block;
+        font-size:.95rem;
+
+    }
+
+    .sidebar{
+
+        position:static;
+        height:auto;
+        padding:1.5rem 1.25rem 1.75rem;
+
+    }
+
+    .site-title{
+
+        margin-bottom:1.75rem;
+
+    }
+
+    .sidebar nav{
+
+        display:flex;
+        flex-wrap:wrap;
+        align-items:baseline;
+        gap:.75rem 1.25rem;
+
+    }
+
+    .sidebar nav ul{
+
+        display:flex;
+        flex-wrap:wrap;
+        gap:.4rem 1.25rem;
+
+    }
+
+    .sidebar nav ul:first-of-type{
+
+        order:1;
+
+    }
+
+    .sidebar li{
+
+        margin:0;
+
+    }
+
+    .sidebar h2{
+
+        order:2;
+        flex-basis:100%;
+        margin:.75rem 0 0;
+        line-height:1.2;
+
+    }
+
+    .sidebar h2 br{
+
+        display:none;
+
+    }
+
+    .sidebar nav ul:last-of-type{
+
+        order:3;
+
+    }
+
+    .sidebar footer{
+
+        margin-top:1.5rem;
+
+    }
+
+    .sidebar footer ul{
+
+        display:flex;
+        flex-wrap:wrap;
+        gap:1.25rem;
+
+    }
+
+    .content{
+
+        padding:1.5rem 1.25rem 3rem;
+
+    }
+
+    .home{
+
+        display:flex;
+        align-items:flex-start;
+        min-height:0;
+
+    }
+
+    .home-image{
+
+        position:static;
+        width:min(100%, 420px);
+        margin:0 auto;
+
+    }
+
+    .home p{
+
+        position:static;
+
+    }
+
+    .project{
+
+        max-width:none;
+
+    }
+
+    .project-header{
+
+        margin-bottom:2.5rem;
+
+    }
+
+    .works{
+
+        margin-top:3rem;
+
+    }
+
+    .works a{
+
+        grid-template-columns:2.5rem minmax(0, 1fr);
+        padding:.4rem 0;
+
+    }
+
+    .project[data-content="videoclip"] .project-block{
+
+        margin-bottom:3rem;
+
+    }
+
+    .project[data-content="videoclip"] .video-player{
+
+        width:100%;
+        margin:0 0 2rem;
+
+    }
+
+    .project[data-content="videoclip"] .credits{
+
+        width:auto;
+        margin-left:0;
+
+    }
+
+    .archive-entry.series,
+    .archive-entry.series2{
+
+        display:block;
+        width:100%;
+
+    }
+
+    .archive-caption,
+    .archive-caption-right{
+
+        position:static;
+        margin-bottom:1rem;
+
+    }
+
+    .archive-images.three{
+
+        grid-template-columns:1fr;
+        gap:.5rem;
+
+    }
+
+}

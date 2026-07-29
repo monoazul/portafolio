@@ -1,5 +1,7 @@
 const home = document.querySelector("#home");
 
+const content = document.querySelector(".content");
+
 const homeLink = document.querySelector(".home-link");
 
 const projectLinks = document.querySelectorAll("[data-project]");
@@ -15,6 +17,8 @@ function showHome() {
         project.hidden = true;
 
     });
+
+    content.scrollIntoView({ behavior: "smooth", block: "start" });
 
 }
 
@@ -35,6 +39,8 @@ function showProject(projectName) {
     if (target) {
 
         target.hidden = false;
+
+        content.scrollIntoView({ behavior: "smooth", block: "start" });
 
     }
 
@@ -82,4 +88,3 @@ if (cover) {
 }
 
 const segundoVideo = document.getElementById("segundo-video");
-
