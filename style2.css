@@ -492,6 +492,20 @@ video{
 
 }
 
+.archive-entry.series2{
+
+    display:grid;
+
+    grid-template-columns:150px 12fr;
+
+    gap:0rem;
+
+    align-items:start;
+
+    width:125%;
+
+}
+
 .archive-caption{
 
     position:sticky;
