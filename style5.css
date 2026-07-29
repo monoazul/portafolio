@@ -571,6 +571,43 @@ video{
 
 }
 
+.archive-entry.star{
+
+    display:grid;
+    grid-template-columns:minmax(220px, 300px) minmax(220px, 1fr);
+    align-items:end;
+    gap:3rem;
+    width:100%;
+    margin-bottom:10rem;
+
+}
+
+.archive-entry.star .archive-image{
+
+    width:100%;
+
+}
+
+.archive-entry.star .archive-image img{
+
+    width:100%;
+
+}
+
+.archive-entry.star .archive-caption{
+
+    position:static;
+    padding-bottom:.25rem;
+
+}
+
+.archive-entry.star .archive-caption p{
+
+    font-size:0.8rem;
+    line-height:1.8;
+
+}
+
 .archive-images{
 
     display:grid;
@@ -620,13 +657,13 @@ video{
         position:static;
         height:auto;
         padding:1.5rem 1.25rem 1.75rem;
-        border-bottom:1px solid var(--text);
+        border-bottom:0.1px solid var(--text);
 
     }
 
     .site-title{
 
-        margin-bottom:1.75rem;
+        margin-bottom:1.0rem;
 
     }
 
@@ -636,7 +673,7 @@ video{
         width:100%;
         flex-wrap:wrap;
         align-items:baseline;
-        gap:.75rem 1.25rem;
+        gap:1.0rem 1.5rem;
 
     }
 
@@ -644,7 +681,7 @@ video{
 
         display:flex;
         flex-wrap:wrap;
-        gap:.4rem 1.25rem;
+        gap:.2rem 2.0rem;
 
     }
 
@@ -665,7 +702,7 @@ video{
         order:2;
         flex-basis:100%;
         margin:.75rem 0 0;
-        line-height:1.2;
+        line-height:0;
 
     }
 
@@ -683,7 +720,7 @@ video{
 
     .sidebar footer{
 
-        margin-top:1.5rem;
+        margin-top:0.5rem;
 
     }
 
@@ -712,8 +749,8 @@ video{
     .home-image{
 
         position:static;
-        width:min(100%, 420px);
-        margin:0 auto;
+        width:min(86%, 340px);
+        margin:0 .25rem 0 auto;
 
     }
 
@@ -793,6 +830,33 @@ video{
         order:1;
         grid-template-columns:1fr;
         gap:.5rem;
+
+    }
+
+    .archive-entry.star{
+
+        display:flex;
+        flex-direction:column;
+        width:100%;
+        gap:0;
+        margin-bottom:6rem;
+
+    }
+
+    .archive-entry.star .archive-image{
+
+        order:1;
+        width:min(78%, 280px);
+        margin:0 auto;
+
+    }
+
+    .archive-entry.star .archive-caption{
+
+        order:2;
+        margin-top:1rem;
+        margin-bottom:2.5rem;
+        padding:0;
 
     }
 
