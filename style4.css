@@ -734,7 +734,8 @@ video{
     .archive-entry.series,
     .archive-entry.series2{
 
-        display:block;
+        display:flex;
+        flex-direction:column;
         width:100%;
 
     }
@@ -743,12 +744,14 @@ video{
     .archive-caption-right{
 
         position:static;
-        margin-bottom:1rem;
+        order:2;
+        margin-top:1rem;
 
     }
 
     .archive-images.three{
 
+        order:1;
         grid-template-columns:1fr;
         gap:.5rem;
 
