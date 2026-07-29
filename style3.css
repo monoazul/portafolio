@@ -473,3 +473,75 @@ video{
     align-self:flex-end;
 
 }
+
+/* ==========================
+   SERIES
+========================== */
+
+.archive-entry.series{
+
+    display:grid;
+
+    grid-template-columns:150px 12fr;
+
+    gap:2rem;
+
+    align-items:start;
+
+    width:125%;
+
+}
+
+.archive-caption{
+
+    position:sticky;
+
+    top:2rem;
+
+}
+
+.archive-caption p{
+
+    font-size:0.80rem;
+
+    line-height:1.45;
+
+}
+
+.archive-caption-right{
+
+    position:right;
+
+}
+
+.archive-caption-right p{
+
+    font-size:0.80rem;
+
+    line-height:1.45;
+
+}
+
+.archive-images{
+
+    display:grid;
+
+    gap:2px;
+
+}
+
+.archive-images.three{
+
+    grid-template-columns:repeat(3,1fr);
+
+}
+
+.archive-images img{
+
+    display:block;
+
+    width:100%;
+
+    height:auto;
+
+}
