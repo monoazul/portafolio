@@ -125,6 +125,25 @@ if (luisLeeCover) {
 
 }
 
+const orillasCover = document.getElementById("orillas-video");
+
+if (orillasCover) {
+
+    orillasCover.addEventListener("click", () => {
+
+        orillasCover.outerHTML = `
+            <iframe
+                src="https://player.vimeo.com/video/1214403138?autoplay=1&title=0&byline=0&portrait=0"
+                title="Todo es orilla ya no hay litoral"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        `;
+
+    });
+
+}
+
 const ojoPezCover = document.getElementById("ojo-pez-video");
 
 if (ojoPezCover) {
