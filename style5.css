@@ -635,33 +635,6 @@ video{
 
 }
 
-.archive-entry.recortes{
-
-    width:calc(100vw - var(--sidebar-width) - 15rem);
-    max-width:none;
-    margin-bottom:3rem;
-
-}
-
-.archive-entry.recortes img{
-
-    width:100%;
-
-}
-
-.archive-recortes-caption{
-
-    margin-top:1rem;
-
-}
-
-.archive-recortes-caption p{
-
-    font-size:.8rem;
-    line-height:1.45;
-
-}
-
 .archive-images{
 
     display:grid;
