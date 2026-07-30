@@ -705,6 +705,7 @@ video{
 .archive-expandido-caption{
 
     margin-top:1rem;
+    max-width:24rem;
 
 }
 
@@ -712,6 +713,7 @@ video{
 
     font-size:.8rem;
     line-height:1.45;
+    margin:0;
 
 }
 

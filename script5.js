@@ -87,6 +87,82 @@ if (cover) {
 
 }
 
+const amistadCover = document.getElementById("amistad-video");
+
+if (amistadCover) {
+
+    amistadCover.addEventListener("click", () => {
+
+        amistadCover.outerHTML = `
+            <iframe
+                src="https://player.vimeo.com/video/1214400960?autoplay=1&title=0&byline=0&portrait=0"
+                title="Un ensayo sobre la amistad y el reencuentro"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        `;
+
+    });
+
+}
+
+const luisLeeCover = document.getElementById("luis-lee-video");
+
+if (luisLeeCover) {
+
+    luisLeeCover.addEventListener("click", () => {
+
+        luisLeeCover.outerHTML = `
+            <iframe
+                src="https://player.vimeo.com/video/1214398288?autoplay=1&title=0&byline=0&portrait=0"
+                title="Luis lee traduce un fragmento de Ectoplasm Feminism"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        `;
+
+    });
+
+}
+
+const ojoPezCover = document.getElementById("ojo-pez-video");
+
+if (ojoPezCover) {
+
+    ojoPezCover.addEventListener("click", () => {
+
+        ojoPezCover.outerHTML = `
+            <iframe
+                src="https://player.vimeo.com/video/1214395615?autoplay=1&title=0&byline=0&portrait=0"
+                title="Ojo de Pez"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        `;
+
+    });
+
+}
+
+const murallaCover = document.getElementById("muralla-video");
+
+if (murallaCover) {
+
+    murallaCover.addEventListener("click", () => {
+
+        murallaCover.outerHTML = `
+            <iframe
+                src="https://player.vimeo.com/video/1214395240?autoplay=1&title=0&byline=0&portrait=0"
+                title="La gran muralla"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        `;
+
+    });
+
+}
+
 const eclipseCover = document.getElementById("eclipse-video");
 
 if (eclipseCover) {
@@ -97,6 +173,44 @@ if (eclipseCover) {
             <iframe
                 src="https://player.vimeo.com/video/1214384004?autoplay=1&title=0&byline=0&portrait=0"
                 title="Eclipse"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        `;
+
+    });
+
+}
+
+const comaCover = document.getElementById("coma-video");
+
+if (comaCover) {
+
+    comaCover.addEventListener("click", () => {
+
+        comaCover.outerHTML = `
+            <iframe
+                src="https://player.vimeo.com/video/507077354?autoplay=1&title=0&byline=0&portrait=0"
+                title="El coma más largo del mundo"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        `;
+
+    });
+
+}
+
+const malDeAlturaCover = document.getElementById("mal-de-altura-video");
+
+if (malDeAlturaCover) {
+
+    malDeAlturaCover.addEventListener("click", () => {
+
+        malDeAlturaCover.outerHTML = `
+            <iframe
+                src="https://player.vimeo.com/video/506841567?autoplay=1&title=0&byline=0&portrait=0"
+                title="Mal de altura"
                 allow="autoplay; fullscreen; picture-in-picture"
                 allowfullscreen>
             </iframe>
