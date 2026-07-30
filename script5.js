@@ -87,4 +87,21 @@ if (cover) {
 
 }
 
-const segundoVideo = document.getElementById("segundo-video");
+const eclipseCover = document.getElementById("eclipse-video");
+
+if (eclipseCover) {
+
+    eclipseCover.addEventListener("click", () => {
+
+        eclipseCover.outerHTML = `
+            <iframe
+                src="https://player.vimeo.com/video/1214384004?autoplay=1&title=0&byline=0&portrait=0"
+                title="Eclipse"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        `;
+
+    });
+
+}

@@ -348,11 +348,20 @@ video{
 
 }
 
+.project[data-content="videoclip"] .video-layout{
+
+    display:grid;
+    grid-template-columns:minmax(0, 1.4fr) minmax(220px, 0.6fr);
+    align-items:start;
+    gap:2rem;
+    margin-top:2rem;
+
+}
+
 .project[data-content="videoclip"] .video-player{
 
-    width:min(68vw,600px);
-
-    margin:2rem 0 5rem 8rem;
+    width:100%;
+    max-width:680px;
 
 }
 
@@ -367,7 +376,6 @@ video{
     border:none;
 
     background:none;
-
     cursor:pointer;
 
 }
@@ -377,6 +385,7 @@ video{
     display:block;
 
     width:100%;
+    height:auto;
 
 }
 
@@ -385,10 +394,27 @@ video{
     display:block;
 
     width:100%;
-
+    max-width:680px;
     aspect-ratio:16/9;
-
+    height:auto;
     border:none;
+
+}
+
+.project[data-content="videoclip"] .video-info-card{
+
+    max-width:24rem;
+    padding:1rem 1.1rem;
+    border:1px solid var(--text);
+    align-self:start;
+
+}
+
+.project[data-content="videoclip"] .video-info-card p{
+
+    font-size:.8rem;
+    line-height:1.45;
+    margin:0;
 
 }
 
@@ -655,11 +681,24 @@ video{
 
 }
 
+.archive-entry.expandido .video-cover,
 .archive-entry.expandido img{
 
     width:100%;
     max-width:1000px;
     height:auto;
+    display:block;
+
+}
+
+.archive-entry.expandido iframe{
+
+    width:100%;
+    max-width:1000px;
+    aspect-ratio:16/9;
+    height:auto;
+    display:block;
+    border:none;
 
 }
 
@@ -694,11 +733,21 @@ video{
         width:auto;
     }
 
+    .archive-entry.expandido .video-cover,
     .archive-entry.expandido img{
         width: 100%;
         max-width: 900px;
         height:auto;
         display:block;
+    }
+
+    .archive-entry.expandido iframe{
+        width: 100%;
+        max-width: 900px;
+        aspect-ratio:16/9;
+        height:auto;
+        display:block;
+        border:none;
     }
 
     .archive-expandido-caption{
@@ -922,10 +971,26 @@ video{
 
     }
 
+    .project[data-content="videoclip"] .video-layout{
+
+        display:flex;
+        flex-direction:column;
+        gap:1.25rem;
+        margin-top:0;
+
+    }
+
     .project[data-content="videoclip"] .video-player{
 
         width:100%;
-        margin:0 0 2rem;
+        margin:0;
+
+    }
+
+    .project[data-content="videoclip"] .video-info-card{
+
+        max-width:none;
+        width:100%;
 
     }
 
