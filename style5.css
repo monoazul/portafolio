@@ -434,15 +434,16 @@ video{
 
 .archive-entry-photo{
 
-    width:calc(100vw - var(--sidebar-width) - 15rem);
-    max-width:none;
-    margin-bottom:8rem;
+    width:100%;
+    margin-bottom:0;
 
 }
 
 .archive-entry-photo img{
 
-    width:50%;
+    width:100%;
+    height:auto;
+    display:block;
 
 }
 
@@ -841,6 +842,23 @@ video{
 
 }
 
+.photo-row{
+
+    display:grid;
+    grid-template-columns:repeat(2, minmax(0, 1fr));
+    gap:1rem;
+    align-items:start;
+
+}
+
+.archive-entry-photo img{
+
+    display:block;
+    width:100%;
+    height:auto;
+
+}
+
 .archive-images img{
 
     display:block;
@@ -1159,6 +1177,13 @@ video{
 
         width:100%;
         max-width:100%;
+
+    }
+
+    .photo-row{
+
+        grid-template-columns:1fr;
+        gap:.75rem;
 
     }
 
