@@ -432,6 +432,24 @@ video{
    FOTO
 ========================== */
 
+.archive-entry-photo{
+
+    width:calc(100vw - var(--sidebar-width) - 15rem);
+    max-width:none;
+    margin-bottom:8rem;
+
+}
+
+.archive-entry-photo img{
+
+    width:50%;
+
+}
+
+/* ==========================
+   ARCHIVO
+========================== */
+
 .photo-archive{
 
     display:flex;
