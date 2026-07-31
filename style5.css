@@ -655,11 +655,21 @@ video{
 
 }
 
-.archive-entry.expandido img{
+.archive-entry.expandido .video-cover,
+.archive-entry.expandido img,
+.archive-entry.expandido iframe{
 
     width:100%;
     max-width:1000px;
     height:auto;
+    display:block;
+    border:none;
+
+}
+
+.archive-entry.expandido iframe{
+
+    aspect-ratio:16/9;
 
 }
 
@@ -703,11 +713,18 @@ video{
         width:auto;
     }
 
-    .archive-entry.expandido img{
+    .archive-entry.expandido .video-cover,
+    .archive-entry.expandido img,
+    .archive-entry.expandido iframe{
         width: 100%;
         max-width: 900px;
         height:auto;
         display:block;
+        border:none;
+    }
+
+    .archive-entry.expandido iframe{
+        aspect-ratio:16/9;
     }
 
     .archive-expandido-caption{
@@ -833,6 +850,7 @@ video{
 
         display:block;
         font-size:.95rem;
+        overflow-x:hidden;
 
     }
 
@@ -919,6 +937,7 @@ video{
     .content{
 
         padding:1.5rem 1.25rem 3rem;
+        overflow-x:hidden;
 
     }
 
@@ -1044,7 +1063,8 @@ video{
 
         display:flex;
         flex-direction:column;
-        width:120%;
+        width:100%;
+        max-width:100%;
         gap:0;
         margin-bottom:3rem;
 
@@ -1053,8 +1073,9 @@ video{
     .archive-entry.star .archive-image{
 
         order:1;
-        width:min(85%, 300px);
-        margin:0 auto;
+        width:100%;
+        max-width:100%;
+        margin:0;
 
     }
 
@@ -1070,6 +1091,7 @@ video{
     .archive-entry.photobook{
 
         width:100%;
+        max-width:100%;
         margin-bottom:4rem;
 
     }
@@ -1077,8 +1099,35 @@ video{
     .archive-entry.expandido{
 
         width:100%;
+        max-width:100%;
         margin:3rem 0 4rem;
         padding-block:0;
+
+    }
+
+    .archive-entry.conceptual{
+
+        width:100%;
+        max-width:100%;
+
+    }
+
+    .archive-entry.conceptual .archive-image{
+
+        width:100%;
+        max-width:100%;
+
+    }
+
+    .archive-conceptual-caption,
+    .four-up-caption,
+    .archive-book-caption,
+    .archive-expandido-caption,
+    .archive-caption,
+    .archive-caption-right{
+
+        width:100%;
+        max-width:100%;
 
     }
 
