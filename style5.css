@@ -666,6 +666,11 @@ video{
 .archive-expandido-caption{
 
     margin-top:1rem;
+    width:100%;
+    max-width:min(24rem, 100%);
+    box-sizing:border-box;
+    overflow-wrap:anywhere;
+    word-break:break-word;
 
 }
 
@@ -673,6 +678,10 @@ video{
 
     font-size:.8rem;
     line-height:1.45;
+    max-width:100%;
+    overflow-wrap:anywhere;
+    word-break:break-word;
+    margin:0;
 
 }
 
@@ -704,6 +713,7 @@ video{
     .archive-expandido-caption{
         margin-top:0;
         padding-top:.35rem;
+        max-width:24rem;
     }
 
 }
@@ -783,8 +793,8 @@ video{
 
     width:min(24rem, 100%);
     margin-top:1rem;
-    margin-left:auto;
-    align-self:auto;
+    margin-left:0;
+    align-self:flex-start;
 
 }
 
