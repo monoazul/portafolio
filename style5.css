@@ -460,7 +460,7 @@ video{
     right:1.25rem;
     border:none;
     background:transparent;
-    color:white;
+    color:rgb(0, 0, 0);
     font-size:2rem;
     cursor:pointer;
 }
