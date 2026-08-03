@@ -457,7 +457,7 @@ video{
 }
 
 .archive-image-1{
-    width:80%;
+    width:100%;
     max-width:100%;
 }
 
@@ -888,6 +888,20 @@ video{
 
 }
 
+.photo-row3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.photo-row3 img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
 .archive-entry-photo img{
 
     display:block;
@@ -1218,6 +1232,15 @@ video{
     }
 
     .photo-row{
+
+        grid-template-columns:1fr;
+        gap:.75rem;
+        width:100%;
+        max-width:100%;
+
+    }
+
+    .photo-row3{
 
         grid-template-columns:1fr;
         gap:.75rem;
