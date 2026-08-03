@@ -8,6 +8,68 @@ const projectLinks = document.querySelectorAll("[data-project]");
 
 const projects = document.querySelectorAll("[data-content]");
 
+const imageModal = document.getElementById("image-modal");
+const imageModalImg = document.getElementById("image-modal-img");
+const imageModalClose = document.querySelector(".image-modal-close");
+
+function openImageModal(src, alt) {
+
+    if (!imageModal || !imageModalImg) return;
+
+    imageModalImg.src = src;
+    imageModalImg.alt = alt || "";
+    imageModal.hidden = false;
+    document.body.style.overflow = "hidden";
+
+}
+
+function closeImageModal() {
+
+    if (!imageModal) return;
+
+    imageModal.hidden = true;
+    document.body.style.overflow = "";
+
+}
+
+if (imageModal) {
+
+    imageModal.addEventListener("click", event => {
+
+        if (event.target === imageModal) {
+            closeImageModal();
+        }
+
+    });
+
+}
+
+if (imageModalClose) {
+
+    imageModalClose.addEventListener("click", closeImageModal);
+
+}
+
+document.addEventListener("keydown", event => {
+
+    if (event.key === "Escape") {
+        closeImageModal();
+    }
+
+});
+
+const photoImages = document.querySelectorAll("[data-content='photo'] img");
+
+photoImages.forEach(img => {
+
+    img.addEventListener("click", () => {
+
+        openImageModal(img.currentSrc || img.src, img.alt);
+
+    });
+
+});
+
 function showHome() {
 
     home.hidden = false;

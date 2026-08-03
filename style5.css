@@ -188,7 +188,7 @@ nav{
 
 .project{
 
-    max-width:760px;
+    max-width:900px;
 
 }
 
@@ -431,6 +431,39 @@ video{
 /* ==========================
    FOTO
 ========================== */
+
+.image-modal{
+    position:fixed;
+    inset:0;
+    background:rgba(246, 246, 246, 0.9);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:2000;
+    padding:2rem;
+}
+
+.image-modal[hidden]{
+    display:none;
+}
+
+.image-modal img{
+    max-width:100%;
+    max-height:100%;
+    object-fit:contain;
+    box-shadow:0 0 40px rgba(234, 234, 234, 0.35);
+}
+
+.image-modal-close{
+    position:absolute;
+    top:1.25rem;
+    right:1.25rem;
+    border:none;
+    background:transparent;
+    color:white;
+    font-size:2rem;
+    cursor:pointer;
+}
 
 .archive-entry-photo{
 
@@ -807,14 +840,14 @@ video{
 
 .archive-entry.four-up{
 
-    width:125%;
-    margin:6rem 0;
+    width:100%;
+    margin:5rem 0;
 
 }
 
 .archive-images.four{
 
-    width:85%;
+    width:100%;
     margin:0 auto;
     grid-template-columns:repeat(2, 1fr);
     gap:1rem;
@@ -823,7 +856,7 @@ video{
 
 .four-up-caption{
 
-    width:calc(42.5% - 1px);
+    width:calc(41% - 1px);
     margin:1rem 7.5% 0 auto;
 
 }
@@ -886,6 +919,33 @@ video{
     align-items:start;
     margin-bottom:1rem;
 
+}
+
+
+.photo-1row{
+
+    display:grid;
+    grid-template-columns:repeat(2, minmax(0, 1fr));
+    gap:1rem;
+    align-items:start;
+    margin-bottom:1rem;
+    max-width:1000px;
+
+}
+
+.photo-v1row{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: left;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.photo-v1row img{
+    width: 100%;
+    max-width: 700px; /* Ajusta el tamaño que prefieras */
+    height: auto;
+    display: block;
 }
 
 .photo-row3{
@@ -1231,21 +1291,26 @@ video{
 
     }
 
-    .photo-row{
+    .photo-row,
+    .photo-row3,
+    .photo-1row,
+    .photo-v1row{
 
-        grid-template-columns:1fr;
+        display:flex;
+        flex-direction:column;
         gap:.75rem;
         width:100%;
         max-width:100%;
 
     }
 
-    .photo-row3{
+    .photo-row3 img,
+    .photo-1row img,
+    .photo-v1row img{
 
-        grid-template-columns:1fr;
-        gap:.75rem;
         width:100%;
         max-width:100%;
+        display:block;
 
     }
 
