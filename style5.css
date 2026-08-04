@@ -921,6 +921,17 @@ video{
 
 }
 
+.photo-norow{
+
+    display:grid;
+    grid-template-columns:repeat(1, minmax(0, 1fr));
+    gap:1rem;
+    align-items:start;
+    margin-bottom:1rem;
+    max-width:800px;
+
+}
+
 
 .photo-1row{
 
