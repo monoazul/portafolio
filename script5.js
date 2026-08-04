@@ -187,6 +187,25 @@ if (luisLeeCover) {
 
 }
 
+const incendioCover = document.getElementById("incendio-video");
+
+if (incendioCover) {
+
+    incendioCover.addEventListener("click", () => {
+
+        incendioCover.outerHTML = `
+            <iframe
+                src="https://player.vimeo.com/video/1215571566?autoplay=1&title=0&byline=0&portrait=0"
+                title="Incendio en Las Tuzas"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        `;
+
+    });
+
+}
+
 const orillasCover = document.getElementById("orillas-video");
 
 if (orillasCover) {
@@ -197,6 +216,25 @@ if (orillasCover) {
             <iframe
                 src="https://player.vimeo.com/video/1214403138?autoplay=1&title=0&byline=0&portrait=0"
                 title="Todo es orilla ya no hay litoral"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        `;
+
+    });
+
+}
+
+const surfCover = document.getElementById("surf-video");
+
+if (surfCover) {
+
+    surfCover.addEventListener("click", () => {
+
+        surfCover.outerHTML = `
+            <iframe
+                src="https://player.vimeo.com/video/1215573055?autoplay=1&title=0&byline=0&portrait=0"
+                title="Surf San Martín"
                 allow="autoplay; fullscreen; picture-in-picture"
                 allowfullscreen>
             </iframe>
